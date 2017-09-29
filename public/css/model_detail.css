@@ -1,0 +1,249 @@
+@charset "utf-8";
+#main{
+    max-width:1200px;
+    margin:50px auto;
+}
+.pdt-left{
+    max-width:880px;
+}
+.carousel-box{
+    width:880px;
+    height:550px;
+    overflow:hidden;
+    position:relative;
+}
+.carousel{
+    min-width:3520px;
+    position:absolute;
+    left:0;
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -ms-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+}
+.carousel li{
+    float:left;
+}
+.img-thumb{
+    margin-top:20px;
+}
+.img-thumb li{
+    float:left;
+    cursor:pointer;
+    margin-right:10px;
+    border:1px solid transparent;
+    transition:transform 0.2s ease-in-out;
+}
+.img-thumb li:hover{
+    border:1px solid #309FFC;
+    border-radius:3px;
+    transform:scale(1.1);
+}
+.img-box img{
+    border-radius:3px;
+}
+/*作品详情*/
+div.detail .description,
+.product-wrap{
+    font-size:14px;
+    color:#67757B;
+}
+div.detail{
+    margin-top:20px;
+    border:1px solid #ddd;
+    border-radius:6px;
+    background:#fff;
+    padding:10px;
+}
+div.detail .title{
+    line-height: 50px;
+    padding:0 25px;
+    font-weight: normal;
+    border-bottom:1px dashed #ddd;
+}
+div.detail .description{
+    line-height: 20px;
+    padding:20px 20px 40px 20px;
+}
+table.product{
+    width:100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+table.product thead{
+    vertical-align: middle;
+    background:#F1F2F3;
+    line-height:40px;
+}
+table.product tr td{
+    padding:10px 0;
+    text-align:center;
+    vertical-align:middle;
+ }
+table.product .btn-download,
+table.product .btn-print{
+    color:#fff;
+    background:#309ffc;
+    padding:5px 15px;
+    margin-left:10px;
+    border-radius:5px;
+}
+table.product .btn-download:hover,
+table.product .btn-print:hover{
+    background:#45B0FF;
+}
+.product-wrap p.count{
+    margin-top:5px;
+    padding:20px 50px;
+    text-align:right;
+    border-top:1px dashed #ddd;
+}
+
+/*右侧简介边栏*/
+aside{
+    max-width:290px;
+}
+aside .right-column{
+    border:1px solid #ddd;
+    background:#fff;
+    border-radius:6px;
+}
+aside .model-title{
+    font-size:20px;
+    margin-bottom:15px;
+    font-weight: normal;
+}
+.column-item>li{
+    padding:20px;
+}
+.column-item>li:not(:last-child){
+    border-bottom:1px dashed #ddd;
+}
+a.u-avatar,
+div.ava-msg{
+    float:left;
+}
+div.ava-msg{
+    padding-left:20px;
+}
+div.ava-msg .comm-time{
+    font-size:14px;
+    color:#67757B;
+    line-height:200%;
+}
+p.comm-text{
+    margin-top:10px;
+    font-size:14px;
+}
+.statistics>li{
+    float:left;
+    width:45%;
+    border:1px solid #ddd;
+    border-radius:5px;
+    margin:0 10px 10px 0;
+    line-height:32px;
+    text-align:center;
+    font-size:14px;
+}
+.statistics span.icon{
+    display:inline-block;
+    width:18px;
+    height:16px;
+    box-sizing: border-box;
+    vertical-align:middle;
+    background:url('../img/model_icon.png') 0 -19px no-repeat;
+}
+.statistics span.icon-like{
+    background-position:0 -19px;
+}
+.statistics li:hover span.icon-like{
+    background-position:-76px 0;
+}
+.statistics li:hover .like_event{
+    color:#D04D3C;
+}
+.statistics span.icon-comment{
+    background-position:-38px 0;
+}
+.statistics li:hover span.icon-comment{
+    background-position:-57px -21px;
+}
+.statistics li:hover .comment_event{
+    color:#97C943;
+}
+.statistics span.icon-view{
+    background-position:-19px 0;
+}
+.statistics li:hover span.icon-view{
+    background-position:-95px 0;
+}
+.statistics li:hover>a{
+    color:#368FF3;
+}
+.statistics span.icon-download{
+    background-position:-19px -19px;
+}
+.statistics li:hover span.icon-download{
+    background-position:-76px -20px;
+}
+.statistics li:hover .download_event{
+    color:#F8A600;
+}
+.statistics>li a span.sta-num{
+    display:inline-block;
+    width:30px;
+    text-align:right;
+}
+/*标签*/
+.column-item p.sub-title{
+    margin-bottom:10px;
+}
+.column-item .label-wrap li{
+    float:left;
+    padding: 5px 10px;
+    background:#b3dcff;
+    color: #333;
+    font-size: 14px;
+    text-align: center;
+    line-height: 22px;
+    border-radius: 5px;
+    margin: 0 6px 6px 0;
+}
+/*社交账号图标*/
+div.social-thumb a{
+    display:block;
+    float:left;
+    width:35px;
+    height:35px;
+    margin-right:8px;
+    background:url('../img/ico-shping.png') no-repeat;
+}
+div.social-thumb a.icon-sina:hover{
+    background-position:0 -48px;
+}
+div.social-thumb a.icon-qq{
+    background-position:-49px 0;
+}
+div.social-thumb a.icon-qq:hover{
+    background-position:-49px -48px;
+}
+
+div.social-thumb a.icon-ren{
+    background-position: -145px 0;
+}
+div.social-thumb a.icon-ren:hover{
+    background-position:-145px -48px;
+}
+div.social-thumb a.icon-kai{
+    background-position:-194px 0;
+}
+div.social-thumb a.icon-kai:hover{
+    background-position:-194px -48px;
+}
+div.social-thumb a.icon-dou{
+    background-position:-244px 0;
+}
+div.social-thumb a.icon-dou:hover{
+    background-position:-244px -48px;
+}

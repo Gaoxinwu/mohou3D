@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cn">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="keywords" content="3D打印, 3D打印服务, 在线3D打印, 3D打印云平台"/>
+    <link rel="icon" href="../img/favicon.ico"/>
+    <link rel="stylesheet" href="../css/index.css"/>
+    <link rel="stylesheet" href="../css/shopping_cart.css"/>
+</head>
+<body>
+<!--页头-->
+<div id="header">加载中...</div>
+<section>
+    <div class="shop_box dierbu">
+        <!--导航-->
+        <div class="shop_nav">
+            <div class="process_wrap process_step2_5">
+                <div class="process_sd"></div>
+                <i class="process_i process_i1">
+                    1<span class="process_tip">购物车</span>
+                </i>
+                <i class="process_i process_i2">
+                    2<span class="process_tip">确认订单</span>
+                </i>
+                <i class="process_i process_i3">
+                    3<span class="process_tip">支付</span>
+                </i>
+                <i class="process_i process_i4">
+                    <img alt="完成" src="http://res.mohou.com/images/new/right.png">
+                    <span class="process_tip">完成</span>
+                </i>
+            </div>
+        </div>
+        <div id="add_address_first" style="">
+            <h2 class="address-title">请添加收货地址</h2>
+            <div class="colorful-line"></div>
+            <div class="form_list address-box">
+                <span class="star">*</span>
+                <span class="label"> 收货人：</span>
+                <input type="text" name="goods_man1">
+                <br>
+                <span class="star">*</span>
+                <span class="label"> 手机/电话:</span>
+                <input type="text" name="goods_phone1"><br>
+                <span class="star">*</span>
+                <span class="label"> 所在区域：</span>
+                <div class="address_select_first" data-toggle="distpicker">
+                    <div class="selectBox"><select name="province"><option value="" data-code="">—— 省 ——</option><option value="北京市" data-code="110000" selected="">北京市</option><option value="天津市" data-code="120000">天津市</option><option value="河北省" data-code="130000">河北省</option><option value="山西省" data-code="140000">山西省</option><option value="内蒙古自治区" data-code="150000">内蒙古自治区</option><option value="辽宁省" data-code="210000">辽宁省</option><option value="吉林省" data-code="220000">吉林省</option><option value="黑龙江省" data-code="230000">黑龙江省</option><option value="上海市" data-code="310000">上海市</option><option value="江苏省" data-code="320000">江苏省</option><option value="浙江省" data-code="330000">浙江省</option><option value="安徽省" data-code="340000">安徽省</option><option value="福建省" data-code="350000">福建省</option><option value="江西省" data-code="360000">江西省</option><option value="山东省" data-code="370000">山东省</option><option value="河南省" data-code="410000">河南省</option><option value="湖北省" data-code="420000">湖北省</option><option value="湖南省" data-code="430000">湖南省</option><option value="广东省" data-code="440000">广东省</option><option value="广西壮族自治区" data-code="450000">广西壮族自治区</option><option value="海南省" data-code="460000">海南省</option><option value="重庆市" data-code="500000">重庆市</option><option value="四川省" data-code="510000">四川省</option><option value="贵州省" data-code="520000">贵州省</option><option value="云南省" data-code="530000">云南省</option><option value="西藏自治区" data-code="540000">西藏自治区</option><option value="陕西省" data-code="610000">陕西省</option><option value="甘肃省" data-code="620000">甘肃省</option><option value="青海省" data-code="630000">青海省</option><option value="宁夏回族自治区" data-code="640000">宁夏回族自治区</option><option value="新疆维吾尔自治区" data-code="650000">新疆维吾尔自治区</option></select><span class="name_arrow_down forSelect"></span></div>
+                    <div class="selectBox"><select name="city"><option value="" data-code="">—— 市 ——</option><option value="北京市市辖区" data-code="110100" selected="">北京市市辖区</option></select><span class="name_arrow_down forSelect"></span></div>
+                    <div class="selectBox"><select name="area"><option value="" data-code="">—— 区 ——</option><option value="东城区" data-code="110101" selected="">东城区</option><option value="西城区" data-code="110102">西城区</option><option value="朝阳区" data-code="110105">朝阳区</option><option value="丰台区" data-code="110106">丰台区</option><option value="石景山区" data-code="110107">石景山区</option><option value="海淀区" data-code="110108">海淀区</option><option value="门头沟区" data-code="110109">门头沟区</option><option value="房山区" data-code="110111">房山区</option><option value="通州区" data-code="110112">通州区</option><option value="顺义区" data-code="110113">顺义区</option><option value="昌平区" data-code="110114">昌平区</option><option value="大兴区" data-code="110115">大兴区</option><option value="怀柔区" data-code="110116">怀柔区</option><option value="平谷区" data-code="110117">平谷区</option><option value="密云区" data-code="110118">密云区</option><option value="延庆区" data-code="110119">延庆区</option></select><span class="name_arrow_down forSelect"></span></div>
+                </div>
+                <br>
+                <span class="star">*</span>
+                <span class="label"> 详细地址：</span>
+                <input type="text" name="goods_area1" style="width:500px;"><br>
+                <span class="confirm_btn addr-first-confirm" id="confirm_newaddress_first" mark="">确认</span>
+            </div>
+        </div>
+        <!--one 开始-->
+        <div class="shop_one" style="display:block">
+            <h2 class="shop_title">填写并核对订单信息</h2>
+            <div class="checkout-steps">
+                <div class="songhuoxinxi">
+                    <p class="shop_h2" style="font-weight:bold;">收货人信息
+                        <a class="right" id="add_address">新增收货地址</a>
+                        <a class="right" style="margin-right: 30px;" id="choose-add-btn">使用其他收货地址</a>
+                    </p>
+                    <p class="no-info">暂无收货地址</p>
+                    <ul class="address_list com-font" id="info_receive">
+
+                    </ul>
+                    <hr class="ordercm_hr">
+                </div>
+                <div class="kuaidi">
+                    <p class="shop_h2" style="font-weight:bold;">配送信息</p>
+                    <div class="zy_kuaidi">
+                        <select class="order-select" id="shipping_list"><option value="1" selected="">顺丰快递</option></select>
+                        <div class="daofu_div" style="display: inline-block;"><input type="checkbox" class="checkbox" id="is_daofu"><label>到付</label></div>
+                    </div>
+                    <hr class="ordercm_hr">
+                </div>
+                <div class="preferential">
+                    <p class="shop_h2" style="font-weight:bold;">优惠券
+                        <a class="right" id="opePrefer">使用</a>
+                    </p>
+                    <div class="preferential-sq" style="padding-left: 26px;">
+                        优惠券：<span class="prefer-code" code="0">点击使用选择优惠券</span>
+                    </div>
+                    <hr class="ordercm_hr">
+                </div>
+                <div class="invoice">
+                    <p class="shop_h2" style="font-weight:bold;">发票信息
+                        <a class="right" id="revise_btn3">新增发票信息</a>
+                        <a class="right" style="margin-right:30px;" id="choose-inv-btn">使用其他发票信息</a>
+                    </p>
+                    <ul class="invoice_list com-font" id="info_invoice">
+                        <li inv_id="0" class=""><span class="invoice_company">不开发票</span></li>
+                    </ul>
+                    <p id="inv_address" style="display: none;">
+                        <input type="checkbox" class="checkbox" id="is_same_add" checked="checked">&nbsp;&nbsp;<span>寄送地址同收货地址</span>
+                    </p>
+                    <div id="invadd_select_sq" style="display: none;" mark="0">
+                        <div class="invadd-head"><span class="text">请选择寄送地址</span><a id="add_inv_address" class="right">新增发票地址</a><a id="choose-invadd-btn" class="right" style="margin-right: 30px;">使用其他发票地址</a></div>
+                        <div class="invadd-body">
+                            <p class="no-info" style="text-align: center;padding:10px;">暂无发票地址</p>
+                            <ul class="address_list com-font" id="info_inv_receive">
+
+                            </ul>
+                        </div>
+                    </div>
+                    <hr class="ordercm_hr">
+                </div>
+                <div class="shopping_list">
+                    <p class="shop_h2" style="font-weight:bold;">商品信息<a class="backto_cart" style="float:right;font-size:12px;font-weight:normal;" href="javascript:;">返回购物车</a></p>
+                    <div class="goods_list">
+                        <table class="goods_list_table">
+                            <thead><tr><td>商品</td><td>详细 </td><td>单价</td><td>数量</td><td>合计</td></tr></thead>
+                            <tbody class="goods_item_body"><tr class="neirong" nid="55007" print_unit_price="209.00" start_price="50.00" name="b836beb5a3c395b98eda30d9679d1a84.stl" cailiao="进口光敏树脂（48小时）" ship_unit_weight="0.09" num="1" repair_price="0.00"><td class="shop_list"><span class="shop_name">b836beb5a3c395b98eda30d9679d1a84.stl</span> <img src="http://api.mohou.com/mohou/1606021574fcdc61ce77?fl=0x40&amp;ex=fff9ec-FFFFFF" width="105" height="74"></td><td class="detail_list"><p><span class="beishu">100</span>%缩放 - 实心 - <span class="mmcm">mm</span></p><p><span class="cailiao">进口光敏树脂（48小时）</span> ( 乳白 )</p><p>后处理：无</p><p>表面效果：无</p><p>额外工艺：无</p><p>小批量：无</p></td><td class="unit_price_list"><span class="shop_danjia">209.00</span></td><td class="count_list">1</td><td class="total_price_list yingfus">209.00</td></tr></tbody>
+                        </table>
+                    </div>
+                    <hr class="ordercm_hr">
+                </div>
+                <div class="note_info" style="padding-bottom:20px;">
+                    <p class="shop_h2" style="font-weight:bold;">备注</p>
+                    <p style="padding-left:20px;">
+                        <input type="text" class="input beizhu">
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--one 结束-->
+        <div class="shop_two" style="display: none;">
+            <div class="order-summary">
+                <div class="statistic right">
+                    <div class="list"><span class="des">总商品金额：</span><em>￥<i class="total_price">209.00</i></em></div>
+                    <div class="list"><span class="des chajia_box"><i class="hintModal"><div class="hintModal_container animated fadeInBottom"></div></i>差价：</span><em class="chajia">￥0.00</em></div>
+                    <div class="list"><span class="des">运费：</span><em class="total_kuaidi">￥0.00</em></div>
+                    <div class="list"><span class="des">优惠券：</span><em>-￥<i class="discount_amount">0.00</i></em></div>
+                    <div class="list"><span class="des">会员折扣：</span><em>-￥<i class="member_discount">NaN</i></em></div>
+                    <div class="list"><span class="des">应付总额：</span><em class="jiesuanjia">￥NaN</em></div>
+                </div>
+            </div>
+            <hr class="ordercm_hr" style="margin: 0 0 10px 0;">
+            <div class="consignee-foot">
+                <p>寄送至： <span style="margin-right: 40px"><i id="check_address"></i></span>收货人：<span><i id="check_receiver"></i>   <i id="check_phone"></i> </span></p>
+            </div>
+            <div style="padding:10px 0 20px">
+                <div class="jiesuan_bottom Settling_column">
+                    <div class="shop_box">
+                        <div class="jiesuan_box">
+                            <input id="cart_tijiao" type="button" class="tijiao_btn" value="提交订单">
+                            <input id="has_submit" class="hidden" type="text" value="0">
+                        </div>
+                        <div class="zongjia">应付总额：<span class="jiesuanjia">￥NaN</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+</section>
+
+<!--页尾-->
+<div id="footer">加载中...</div>
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src="../js/shopping_cart.js"></script>
+</body>
+</html>

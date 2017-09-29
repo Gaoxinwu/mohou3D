@@ -1,0 +1,225 @@
+@charset "utf-8";
+section{
+    background:#F2F2F2;
+}
+/*分类导航样式设置*/
+.category_box{
+    background:#fff;
+    max-width:1200px;
+    margin:0 auto;
+    border:1px solid #ddd;
+    border-radius:5px;
+    margin-top:40px;
+    padding:0 15px;
+}
+a:hover{
+    color:#29AFEC;
+}
+.category_box a{
+    font-size:14px;
+}
+.category_box p{
+    font-size:18px;
+    height:32px;
+    line-height:32px;
+    color:#9a9999;
+    width:65px;
+    text-align:right;
+}
+.first_line ul>li,
+.second_line ul>li,
+.last_line ul>li{
+    float:left;
+    padding:2px 10px;
+    margin:3px;
+}
+.first_line,
+.second_line{
+    border-bottom:1px dashed #ddd;
+}
+.first_line,
+.second_line,
+.last_line{
+    padding:15px 0;
+}
+.category_box li.active{
+    background:#309FFC;
+    border-radius:5px;
+}
+.category_box li.active a{
+    color:#fff;
+}
+/*模型列表和搜索框*/
+#model_list_box{
+    max-width:1200px;
+    margin:0 auto;
+    margin-top:20px;
+}
+/*搜索框样式设置*/
+.model_search{
+    width: 370px;
+    height: 35px;
+    background-color: #fff;
+    border: 1px solid #d2d2d2;;
+    border-radius: 5px;
+    padding: 5px;
+}
+.model_search input{
+    border: none;
+    background-color: #fff;
+    box-shadow: none;
+    width: 325px;
+    height: 23px;
+    text-align: left;
+    padding:0 15px;
+    border-right: 1px solid #d2d2d2;
+}
+.model_search input:hover,
+.model_search input:focus{
+    border:none;
+    border-right: 1px solid #d2d2d2;
+}
+#search_btn{
+    display:inline-block;
+    width:18px;
+    height:18px;
+    background:url('../img/model_icon.png') 0 0 no-repeat;
+    position:relative;
+    left:3px;
+    top:3px;
+    cursor:pointer;
+}
+/*模型列表*/
+.model_list{
+    margin-top:20px;
+}
+img.model_cover{
+    width:219px;
+    height:180px;
+    opacity:0.9;
+    border-radius:6px 6px 0 0;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+}
+img.model_cover:hover{
+    opacity:1;
+}
+.model-block li{
+    display:block;
+    float:left;
+    width:220px;
+    height:250px;
+    background:#fff;
+    border-radius:6px;
+    margin-right:25px;
+    margin-bottom:25px;
+    border:1px solid transparent;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.model-block li:nth-child(5n){
+    margin-right:0;
+}
+.model-block li:hover{
+    border:1px solid #ddd;
+    -webkit-transform: translate(0,-4px);
+    -moz-transform: translate(0,-4px);
+    -ms-transform: translate(0,-4px);
+    -o-transform: translate(0,-4px);
+    transform: translate(0,-4px);
+    box-shadow: 5px 5px 10px #333;
+}
+a.model_name{
+    display:block;
+    padding:10px;
+    color:#333;
+    font-size:14px;
+    overflow: hidden;
+}
+div.other-info{
+    padding:0 10px;
+    font-size:12px;
+}
+div.other-info span{
+    display:inline-block;
+    width:18px;
+    height:16px;
+    box-sizing: border-box;
+    vertical-align:middle;
+}
+span.model_icon{
+    margin-right:3px;
+    padding-right:3px;
+    background:url('../img/model_icon.png') no-repeat;
+}
+div.other-info a{
+    display:inline-block;
+    min-width:40px;
+}
+span.icon-view{
+    background-position:-19px 0;
+}
+span.icon-view:hover{
+    background-position:-95px 0;
+}
+span.icon-comment{
+    background-position:-38px 0;
+}
+span.icon-comment:hover{
+    background-position:-57px -21px;
+}
+span.icon-like{
+    background-position:0 -19px;
+}
+span.icon-like:hover{
+    background-position:-76px 0;
+}
+span.icon-download{
+    background-position:-19px -19px;
+}
+span.icon-download:hover{
+    background-position:-76px -20px;
+}
+/*页码设置*/
+#pages{
+    padding: 60px 0 20px;
+    text-align: center;
+    width:600px;
+    margin:0 auto;
+}
+.page-ul{
+    margin-left:5px;
+}
+#pages li{
+    margin: 0 2px;
+    display: inline-block;
+}
+#pages span{
+    display: inline-block;
+    padding: 0 15px;
+    height: 36px;
+    line-height: 36px;
+    background: #fff;
+    color: #666;
+    font-size: 14px;
+    text-align: center;
+    transition: background-color .2s ease-out;
+    border-radius: 4px;
+    border:1px solid #ddd;
+    cursor:pointer;
+}
+.page-ul>li span{
+    float: left;
+}
+#pages>span{
+    margin-left:5px;
+}
+#pages .current {
+    background-color:#309FFC;
+    color: #fff;
+    border:none;
+}

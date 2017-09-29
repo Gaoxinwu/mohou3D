@@ -1,0 +1,287 @@
+/*购物车弹窗*/
+.cart_tanchuang {
+	position: fixed;
+	display: none;
+	width: 210px;
+	border: 1px solid #3f93da;
+	right: 20px;
+	top: 70px;
+	z-index: 1000;
+	background-color: #fff;
+}
+.cart_tanchuang .sanjiao {
+	position: absolute;
+	top: -10px;
+	left: 90px;
+	width: 0;
+	height: 0;
+	line-height: 0;
+	border: 10px solid transparent;
+	border-bottom-color: #3f93da;
+	border-top: 0;
+}
+#cart_close {
+	position: relative;
+	top: 3px;
+}
+.cart_t_top {
+	background-color: #f0f7fc;
+	text-align: right;
+	height: 31px;
+}
+.cart_t_top span {
+	margin-right: 8px;
+}
+.cart_t_bottom {
+	padding: 5px;
+	text-align: center;
+}
+.cart_t_bottom button {
+	width: 189px;
+	background-color: #1e80d4;
+	color: #fff;
+	padding: 5px 18px;
+	font-size: 16px;
+	font-weight: bold;
+}
+.cart_clxx p, .cart_tc_js p {
+	margin: 0;
+	font-size: 12px;
+	color: #8c8f94;
+}
+#cart_close:hover {
+	cursor: pointer;
+}
+.cart_tc_js span {
+	color: #1e80d4;
+}
+/*大遮罩层*/
+#bgmask {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	background: #000;
+	z-index: 990;
+	opacity: 0.4;
+	display:block;
+}
+/*登录弹出框*/
+#ulpanel .login_title {
+	margin: 0;
+	padding: 30px 0 20px 0;
+	font-size: 26px;
+	color: #333;
+	text-align: center;
+}
+/*登录方式切换*/
+.login_tab {
+	padding-bottom: 10px;
+	position: relative;
+	margin-bottom: 16px;
+}
+.login_inner.active {
+	color: #158ad6;
+}
+.login_inner {
+	float: left;
+	width: 50%;
+	color: #333333;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border-bottom: 1px solid #f2f2f2;
+	cursor: pointer;
+}
+.login_tab .icon{
+	display:inline-block;
+	width:24px;
+	height:24px;
+	vertical-align:middle;
+}
+.login_phone .icon_phone{
+	background:url('../img/icon.png') no-repeat -6px -55px;
+}
+.login_phone.active .icon_phone{
+	background:url('../img/icon.png') no-repeat -6px -31px;
+}
+.login_email .icon_email{
+	background:url('../img/icon.png') no-repeat -3px -79px;
+}
+.login_email.active .icon_email{
+	background:url('../img/icon.png') no-repeat -3px -103px;
+}
+.login_active {
+	height: 1px;
+	background-color: #158ad6;
+	display: inline-block;
+	width: 185px;
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	transition: all .3s ease;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+}
+#userlogin input{
+	box-sizing:border-box;
+}
+#userlogin {
+	display: block;
+	width: 600px;
+	position: fixed;
+	left: 50%;
+	margin-left: -300px;
+	top:50px;
+	background: #fff;
+	z-index: 999;
+	overflow: hidden;
+}
+#ulpanel {
+	margin: 0 auto;
+	width: 370px;
+}
+#userlogin .other_login_box {
+	float: left;
+	width: 100%;
+	margin-top:24px;
+	text-align:center;
+}
+#userlogin .submitwarning {
+	margin-top: -15px;
+	color: #fd5f39;
+	font-size: 12px;
+	height: 20px;
+	line-height: 20px;
+	display: none;
+}
+#userlogin .input_txt {
+	width: 100%;
+	color: #333;
+	border:1px solid #d8d8d8;
+	transition: border-color ease .3s;
+	font-size: 12px;
+	outline: none;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	padding: 0 14px;
+	height: 48px;
+	background-color: #fff;
+	border-radius:2px;
+}
+#userlogin input.input_txt:active,
+#userlogin input.input_txt:focus {
+	border: 1px solid #fd5f39;
+}
+#ulpanel .login_info {
+	margin-bottom: 20px;
+}
+#sendlogin {
+	background-color:#158ad6;
+	color: #fff;
+	font-size: 14px;
+	height: 48px;
+	width: 100%;
+	border: 0;
+}
+#login_btn .auto_login{
+	margin-top: 12px;
+}
+#login_btn div label {
+	margin-left: 5px;
+	font-size: 14px;
+	color: #666;
+}
+/*关闭登录框按钮*/
+#login_close{
+	display: block;
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	background: #fff;
+	-webkit-transform: scale(1.6);
+	-moz-transform: scale(1.6);
+	-ms-transform: scale(1.6);
+	-o-transform: scale(1.6);
+	transform: scale(1.6);
+}
+#login_close:hover{
+	color:#158AD6;
+}
+/*其他方式登录*/
+#qtpanel a span {
+	display: inline-block;
+	margin: 0 12px;
+	width: 32px;
+    height: 32px;
+}
+.yys-icon {
+	display: inline-block;
+	overflow: hidden;
+	background: url(../img/login-icon.png) no-repeat;
+}
+.yy-qql:hover{
+	background-position: 0 -40px;
+}
+.yy-sinal{
+	background-position: -52px 0;
+}
+.yy-sinal:hover{
+	background-position: -52px -40px;
+}
+.yy-wexin{
+	background-position: -104px 0;
+}
+.yy-wexin:hover{
+	background-position: -104px -40px;
+}
+.line_other{
+	border-bottom: 1px solid #d0d0d0;
+    margin-top: 30px;
+}
+.line_other span{
+	background-color: #fff;
+    margin: 0 auto;
+    position: relative;
+    left: 50%;
+    margin-left: -62px;
+    top: 10px;
+    padding: 0 20px;
+	color:#666;
+}
+.other_op{
+	text-align: center;
+    margin-top: 14px;
+    margin-bottom:30px;
+	color:#666;
+	font-size:14px;
+}
+.other_op a{
+	color:#158AD6;
+	padding:0 12px;
+}
+.other_op a:hover{
+	color:red;
+}
+/*获取验证码按钮样式*/
+.send_login_veri{
+	background-color: #158ad6;
+    color: #fff;
+    font-size: 14px;
+    height: 48px;
+    width: 124px;
+    border: 0;
+    display: inline-block;
+    float: right;
+}
+.send_login_veri:hover,
+#sendlogin:hover{
+	cursor:pointer;
+}
+
+
+
+
+

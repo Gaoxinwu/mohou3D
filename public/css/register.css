@@ -1,0 +1,117 @@
+@charset "utf-8";
+body{
+	margin-top:92px;
+	background:#F2F2F2;
+}
+/*注册页面css*/
+.regist_form{
+	width:880px;
+	margin:0 auto;
+	background-color:#fff;
+	overflow:hidden;
+	margin-bottom:40px;
+}
+.regist_title{
+	font-size:30px;
+	color:#000;
+	font-weight:100;
+	text-align: center;
+    padding: 60px 0 20px;
+}
+.regist_area{
+	width:334px;
+	margin:0 auto;
+}
+.item{
+	margin-top:16px;
+}
+input[type="text"],
+input[type="password"]{
+	border:1px solid #d8d8d8;
+	background-color:#fff;
+	box-shadow: none;
+    height: 40px;
+	width: 100%;
+    border-radius: 0;
+	font-size: 12px;
+    padding: 0 14px;
+	color:#333;
+}
+input[type="text"]:hover,
+input[type="text"]:focus,
+input[type="password"]:hover,
+input[type="password"]:focus{
+	border-color:#158AD6;
+}
+.btn{
+	width:100%;
+	height:40px;
+}
+.blue_btn.btn_active,
+.blue_btn.btn_active:focus{
+	background-color:#158ad6;
+	border:none; 
+	color:#fff;
+	font-size:14px;
+	font-weight:normal;
+	cursor:pointer;
+}
+.regist_btn_box{
+	margin-top:30px;
+}
+.direct_login{
+	margin: 50px 0 70px;
+	font-size:14px;
+	color:#666666;
+	text-align:center;
+}
+.direct_login a,.item a{
+	color:#158ad6;
+}
+.input_verification{
+	float:left;
+	width:214px !important;	
+}
+.send_verification{
+	float:left;
+	width:120px;
+	text-align:center;
+	cursor:pointer;
+}
+.tips{
+	margin: 4px 0 -10px 0;
+    font-size: 12px;
+    color: #fd5f39;
+	display:none;
+}
+.tips .icon{
+	margin: 0 5px 4px 0;
+	width: 14px;
+    height: 14px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.tips .icon_error{
+	background:url('../img/error_tip.png') no-repeat center center;
+}
+.tips .icon_success{
+	background:url('../img/ok_tip.png') no-repeat center center;
+}
+.input_group .btn.disabled,
+.input_group .btn.disabled:hover{
+	background-color:#ADADAD;
+	color:#fff;
+	font-weight:normal;
+	border:none;
+	font-size:14px;
+}
+input.error_warning,
+input.error_warning:hover{
+	border-color:#fd5f39;
+}
+p.change_code a{
+	font-size:14px;
+}
+span.register-tips{
+	font-size:12px;color:#8b8b8b;
+}

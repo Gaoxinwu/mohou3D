@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh">
+    <meta charset="UTF-8">
+    <title>注册成为魔猴会员</title>
+    <link rel="icon" href="../img/favicon.ico"/>
+    <link rel="stylesheet" href="../css/index.css"/>
+    <link rel="stylesheet" href="../css/register.css"/>
+</head>
+<body>
+<!--页头-->
+<div id="header">加载中...</div>
+<!--注册框-->
+<div class="regist_form">
+    <h1 class="regist_title ">注册魔猴账号</h1>
+    <div class="regist_area">
+        <form id="register_form" method="post" action="">
+            <div class="form_body" data-view="phoneRegister">
+                <div class="item">
+                <input type="text" class="member_truename" name="member_truename" autofocus placeholder="请输入您的姓名">
+                <div class="tips">
+                    <i class="icon icon_error"></i>
+                    <span class="unameTip">用户名至少由两位字母、汉字和数字和下划线组成</span>
+                </div>
+            </div>
+                <div class="item">
+                <input type="text" class="phone" name="phone" placeholder="请输入常用手机号码">
+                <div class="tips">
+                    <i class="icon icon_error"></i>
+                    <span>请输入正确的手机号码</span>
+                </div>
+            </div>
+                <div class="item">
+                <div class="item input_group clear">
+                    <input type="text" class="input_verification" name="input_verification" placeholder="请输入您收到的短信验证码" autocomplete="off">
+                    <input type="button" class="btn blue_btn btn_active send_verification"  value="获取验证码">
+                    <div class="tips" >
+                        <i class="icon icon_error"></i>
+                        <span>验证码错误</span>
+                    </div>
+                    <!--验证码弹出框-->
+                    <div class="smask"></div>
+                    <div class="veri_code">
+                        <h3></h3>
+                    </div>
+            </div>
+                <div class="item">
+                <input type="password" class="password" name="password" placeholder="请输入密码" autocomplete="off">
+                <div class="tips">
+                    <i class="icon icon_error"></i>
+                    <span>密码由8-20位数字和字母组成</span>
+                </div>
+            </div>
+                <div class="item">
+                    <input type="password" class="repassword" name="repassword" placeholder="请再次输入密码" autocomplete="off">
+                    <div class="tips">
+                        <i class="icon icon_error"></i>
+                        <span>两次密码不一致，请重新输入</span>
+                    </div>
+                </div>
+            <div class="item regist_btn_box">
+                <input type="button" class="btn blue_btn btn_active regist_btn" value="立即注册">
+            </div>
+        </div>
+            <div class="item">
+                <span class="register-tips">点击“立即注册”,即表示您同意并愿意遵守《 <a href="http://www.mohou.com/document-agreement.html" target="_blank" class="blue_link">魔猴服务协议</a> 》 </span>
+            </div>
+            <div class="direct_login">
+                已有魔猴账户，<a href="javascript:;" onclick="loginBtn();">直接登录</a>
+            </div>
+        </form>
+    </div>
+</div>
+<!--页尾-->
+<div id="footer">加载中...</div>
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src="../js/register.js"></script>
+<script src="../js/index.js"></script>
+</body>
+</html>

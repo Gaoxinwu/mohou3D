@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cn">
+    <meta charset="UTF-8">
+    <title>魔猴网 - 新一代3D打印云平台</title>
+    <meta name="keywords" content="3D打印, 3D打印服务, 在线3D打印, 3D打印云平台" />
+    <link rel="icon" href="img/favicon.ico"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/shopping_cart.css"/>
+</head>
+<body>
+<!--1.页头-->
+<header class="clear">
+    <div class="header">
+        <!--logo-->
+        <div id="logo" class="lt animated flip iteration">
+            <a href="index.html" title="3D打印从魔猴开始">
+                <img src="pictures/mh-logo.png" alt="魔猴网3D打印"/>
+            </a>
+        </div>
+        <!--导航-->
+        <nav class="header-nav">
+            <ul class="lt clear">
+                <!--在线报价-->
+                <li id="quoted-price">
+                    <div  class="dropdown">
+                        <a href="#" title="在线报价">在线报价</a>
+                        <!--下拉菜单-->
+                        <div class="dropdown-menu clear">
+                            <ul class="lt clear">
+                                <li><a href="#">开始3D打印</a></li>
+                                <li><a href="#">支持打印材料</a></li>
+                                <li><a href="#">打印必读</a></li>
+                                <li><a href="#">保密承诺</a></li>
+                            </ul>
+                            <div class="">
+                                <ul class="price-content clear rt">
+                                    <li>
+                                        <img src="pictures/bj-1.png" alt=""/>
+                                        <br/>
+                                        <span>有3D文件</span>
+                                        <a href="">上传获得即时报价</a>
+                                    </li>
+                                    <li>
+                                        <img src="pictures/bj-2.png" alt=""/>
+                                        <br/>
+                                        <span>没有3D文件</span>
+                                        <a href="">与设计师沟通建模</a>
+                                    </li>
+                                    <li>
+                                        <img src="pictures/bj-3.png" alt=""/>
+                                        <br/>
+                                        <span>有实物需要扫描</span>
+                                        <a href="">联系业务员扫描</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!--行业案例-->
+                <li id="business-case">
+                    <div class="dropdown" >
+                        <a href="#" title="行业案例">行业案例</a>
+                        <!--下拉菜单-->
+                        <div class="cases-menu">
+                            <ul class="case-content clear">
+                                <li>
+                                    <a href="">
+                                        <img src="pictures/nav-al1.png" alt=""/>
+                                    </a>
+                                    <span>展示模型</span>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="pictures/nav-al2.png" alt=""/>
+                                    </a>
+                                    <span>工业设计</span>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="pictures/nav-al3.png" alt=""/>
+                                    </a>
+                                    <span>原型手板</span>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="pictures/nav-al4.png" alt=""/>
+                                    </a>
+                                    <span>模具</span>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="pictures/nav-al5.png" alt=""/>
+                                    </a>
+                                    <span>艺术雕塑</span>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="pictures/nav-al6.png" alt=""/>
+                                    </a>
+                                    <span>建筑沙盘</span>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="pictures/nav-al7.png" alt=""/>
+                                    </a>
+                                    <span>动漫手办</span>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="pictures/nav-al8.png" alt=""/>
+                                    </a>
+                                    <span>医疗生物</span>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="pictures/nav-al9.png" alt=""/>
+                                    </a>
+                                    <span>汽车制造</span>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="pictures/nav-al10.png" alt=""/>
+                                    </a>
+                                    <span>人像</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#" title="客户说">客户说</a></li>
+                <li><a href="#" title="问答">问答</a></li>
+                <li><a href="#" title="知识堂">知识堂</a></li>
+                <li><a href="tpl/model_library.html" title="3D模型库">3D模型库</a></li>
+                <li id="mh-resource">
+                    <div class="dropdown" >
+                        <a href="#">资源</a>
+                        <!--下拉菜单-->
+                        <div class="resource-menu">
+                            <ul class="clear">
+                                <li><a href="#">资讯</a></li>
+                                <li><a href="#">3D打印教育</a></li>
+                                <li><a href="#">3D工具</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <!--搜索和购物车、登录按钮-->
+        <div id="buy" class="rt clear">
+            <div id="search" class="lt clear">
+                <a href="#" class="search rt animated rotateIn"></a>
+                <div class="search-display">
+                    <form action="#" class="lt">
+                        <input type="search" name="search" placeholder="请输入搜索关键词"/>
+                    </form>
+                    <a href="#" class="close rt">&times</a>
+                </div>
+            </div>
+            <a href="tpl/shopping_cart.html" class="lt account-cart">
+                <p class="count-number">0</p>
+            </a>
+            <a href="#" class="lt" id="login">登录&nbsp;</a>
+            <a href="tpl/register.html" class="lt" id="register">/&nbsp;注册</a>
+            <div class="user_count">
+                <span class="user_name"></span>
+                <div class="user-avatar">
+                    <ul class="user_tab">
+                        <li>
+                            <img class="user_picture" alt="头像" src="img/default_user_portrait.gif">
+                        </li>
+                        <li>
+                            <a href="javascript:;">我的订单</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">我的魔猴</a>
+                        </li>
+                        <li>
+                            <a href="javascript:exit();" id="escBtn">退出</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+       <!--遮罩层-->
+    <div id="bgmask"></div>
+    <!--登录弹出框-->
+    <div id="userlogin">
+        <div id="ulpanel">
+            <p class="login_title">魔猴账号登录</p>
+            <ul class="login_tab clear">
+                <li class="login_inner login_phone active"><i class="icon icon_phone"></i>短信快捷登录</li>
+                <li class="login_inner login_email"><i class="icon icon_email"></i>账号密码登录</li>
+                <span class="login_active"></span>
+            </ul>
+            <!--短信快捷登录-->
+            <div id="phone_login">
+                <p class="login_info">
+                    <input type="text" class="input_txt" name="login_phone" placeholder="请输入手机号码" autofocus="autofocus">
+                </p>
+                <p class="submitwarning">请输入正确的手机号码</p>
+                <p class="login_info">
+                    <input type="text" class="input_txt" name="login_veri_code" placeholder="请输入验证码" autocomplete="off" style="width:246px;">
+                    <input type="button" class="send_login_veri" value="获取验证码">
+                </p>
+                <p class="submitwarning">验证码不正确，请重新输入</p>
+            </div>
+            <!--验证码弹出框-->
+            <div class="smask"></div>
+            <div class="veri_code">
+                <h3></h3>
+            </div>
+            <!--账号密码登录-->
+            <div id="account_login">
+                <p class="login_info">
+                    <input type="text"  name="user_name" class="input_txt" placeholder="请输入手机号/邮箱" autofocus="autofocus">
+                </p>
+                <p class="submitwarning">用户名至少由两位字母、汉字和数字和下划线组成</p>
+                <p class="login_info">
+                    <input type="password" class="input_txt" name="password" placeholder="请输入您的密码" autocomplete="off" >
+                </p>
+                <p class="submitwarning">密码由8-20位数字和字母组成</p>
+            </div>
+            <div id="login_btn">
+                <input type="button" id="sendlogin" class="" value="立即登录">
+                <div class="auto_login">
+                    <label for="auto_login">
+                        <input id="auto_login" type="checkbox" value="1" checked>
+                        自动登录</label>
+                </div>
+            </div>
+            <div id="qtpanel">
+                <div class="line_other"><span>其他方式登录</span></div>
+                <div class="other_login_box">
+                    <a href="javascript:;" id="qql"><span class="yys-icon yy-qql"></span></a>
+                    <a href="javascript:;" id="sinal"><span class="yys-icon yy-sinal"></span></a>
+                    <a href="javascript:;" id="weixinal"><span class="yys-icon yy-wexin"></span></a>
+                </div>
+            </div>
+            <div class="other_op">
+                <p>还没有魔猴账户？<a href="tpl/register.html">立即注册</a></p>
+            </div>
+        </div>
+        <a href="javascript:;" id="login_close">&times;</a>
+    </div>
+</header>
+<!--2.页面主体-->
+<section>
+    <!--1.banner轮播-->
+    <div id="banner">
+        <div class="carousel">
+            <a href="tpl/model_library.html" class="show">
+                <img src="pictures/home-carousel2.jpg" alt=""/>
+            </a>
+            <a href="tpl/model_library.html" >
+                <img src="pictures/head-banner.jpg" alt=""/>
+            </a>
+            <a href="tpl/model_library.html">
+                <img src="pictures/home-carousel1.jpg" alt=""/>
+            </a>
+            <a href="tpl/model_library.html">
+                <img src="pictures/home-carousel3.jpg" alt=""/>
+            </a>
+        </div>
+        <div id="dots">
+            <ul class="clear">
+                <li class="hover"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    <!--2.主要业务-->
+    <div id="main-business" class="big-box">
+        <p class="block-title">主要业务</p>
+        <div class="inner-box bus-box">
+            <ul class="clear">
+                <li>
+                    <a href="">
+                        <div class="bus-circle bus-circle-1"></div>
+                        <div class="bus-title">
+                            <span class="bus-point"></span>
+                            <span>3D扫描</span>
+                        </div>
+                        <p class="bus-describe">
+                            微米级精度<br>
+                            尺寸从1厘米到30米<br>
+                            多种工业级3D扫描仪<br>
+                            图纸、照片、实物均可3D建模
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="bus-circle bus-circle-2"></div>
+                        <div class="bus-title">
+                            <span class="bus-point point2"></span>
+                            <span>云3D打印</span>
+                        </div>
+                        <p class="bus-describe">
+                            低至0.8元/克<br>
+                            10+专业后处理工艺<br>
+                            1分钟即时报价 自助下单<br>
+                            30+材料 塑料、金属、石蜡等
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="bus-circle bus-circle-3"></div>
+                        <div class="bus-title">
+                            <span class="bus-point point3"></span>
+                            <span>精品定制</span>
+                        </div>
+                        <p class="bus-describe">
+                            专属设计师<br>
+                            全程客服沟通<br>
+                            极致后期，精细上色<br>
+                            明星挚爱之选，物超所值
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="bus-circle bus-circle-4"></div>
+                        <div class="bus-title">
+                            <span class="bus-point point4"></span>
+                            <span>批量生产</span>
+                        </div>
+                        <p class="bus-describe">
+                            免费3D打印试制<br>
+                            小批量快速生产<br>
+                            大批量生产免费咨询<br>
+                            用最高性价比将您的想法推向市场
+                        </p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--3.行业案例-->
+    <div id="cases" class="big-box">
+        <p class="block-title">行业案例
+            <a href="">更多</a>
+        </p>
+        <div class="inner-box case-box">
+            <ul class="clear">
+                <li>
+                    <a href="">
+                        <div class="caseimg-box">
+                            <div class="case-imgs case1"></div>
+                        </div>
+                        <p>动漫手办</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="caseimg-box">
+                            <div class="case-imgs case2"></div>
+                        </div>
+                        <p>工业设计</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="caseimg-box">
+                            <div class="case-imgs case3"></div>
+                        </div>
+                        <p>艺术雕塑</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="caseimg-box">
+                            <div class="case-imgs case4"></div>
+                        </div>
+                        <p>定制礼品</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--4.云打印技术服务-->
+    <div class="big-box cloud">
+        <div id="Tec-service" class="inner-box">
+            <p class="block-title">云打印技术服务</p>
+            <div class="Tec-service">
+                <p>魔猴SDK，让您的网站一步集成：</p>
+                <p>3D模型在线即时报价系统</p>
+                <p>支付与订单管理系统</p>
+                <p>报价定制、数据统计分析等完善的后台支撑系统</p>
+                <a href="" class="button-gray">申请试用</a>
+            </div>
+        </div>
+    </div>
+    <!--5.魔猴盒子-->
+    <div class="big-box">
+        <div id="mh-box" class="inner-box">
+            <div class="mh-box clear">
+                <p class="lt">
+                <img src="pictures/hezi.png" alt="盒子">
+                </p>
+                <div class="lt">
+                    <h3 class="block-title">魔猴盒子<br>您的掌上3D打印中心 </h3>
+                    <p>实时远程监控打印全过程</p>
+                    <p>管理控制多个打印机</p>
+                    <p>掌上修图随心所想</p>
+                    <p>手机app免费下载</p>
+                    <a href="">查看详情</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--6.在线3D工具-->
+    <div class="big-box" id="online-3d">
+        <div class="inner-box">
+            <h3 class="block-title">在线3D工具
+                <a class="button-gray" href="">更多工具</a>
+            </h3>
+            <p>100多种在线3D定制工具</p>
+            <p>让人人都可修改定制</p>
+            <p>助力您将想法快速变为现实</p>
+            <ul class="gongju-show clear">
+                <li>
+                    <a id="tuya" target="_blank" href="">
+                        <img alt="涂鸦变3d" src="pictures/gongju1.png">
+                        <h4>涂鸦变3D</h4>
+                    </a>
+                </li>
+                <li>
+                    <a id="dingzhiqi" target="_blank" href="">
+                        <img alt="模型定制器" src="pictures/gongju2.png" >
+                        <h4>模型定制器</h4>
+                    </a>
+                </li>
+                <li>
+                    <a id="fudiao" target="_blank" href="">
+                        <img alt="照片浮雕" src="pictures/gongju3.png">
+                        <h4>照片浮雕</h4>
+
+                    </a>
+                </li>
+                <li>
+                    <a id="2d_3d" target="_blank" href="">
+                        <img alt="2D转3D" src="pictures/gongju4.png">
+                        <h4>2D转3D</h4>
+
+                    </a>
+                </li>
+                <li>
+                    <a id="zhuanhuan" target="_blank" href="">
+                        <img alt="3D格式转换" src="pictures/gongju5.png">
+                        <h4>3D格式转换</h4>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--7. 3D模型库-->
+    <div class="big-box" id="model-3d">
+        <div class="inner-box">
+            <p class="block-title">3D模型库</p>
+            <ul class="model-box clear">
+                <li>
+                    <a href="tpl/model_library.html">
+                        <img src="pictures/mxk-1.jpg" alt="居家用品"/>
+                        <div>
+                            <p>居家用品</p>
+                        </div>
+                    </a>
+                </li>
+                <li><a href="tpl/model_library.html">
+                    <img src="pictures/mxk-2.jpg" alt="医疗"/>
+                    <div>
+                        <p>医疗</p>
+                    </div>
+                </a>
+                </li>
+                <li>
+                    <a href="tpl/model_library.html">
+                        <img src="pictures/mxk-3.jpg" alt="创客DIY"/>
+                        <div>
+                            <p>创客DIY</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="tpl/model_library.html">
+                        <img src="pictures/mxk-4.jpg" alt="写实人物"/>
+                        <div>
+                            <p>写实人物</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="tpl/model_library.html">
+                        <img src="pictures/mxk-5.jpg" alt="游戏卡通"/>
+                        <div>
+                            <p>游戏卡通</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="tpl/model_library.html">
+                        <img src="pictures/mxk-6.jpg" alt="艺术时尚"/>
+                        <div>
+                            <p>艺术时尚</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--8.资讯动态-->
+    <div class="big-box" id="info-box">
+        <div class="inner-box">
+            <p class="block-title">资讯动态</p>
+            <div class="info">
+                <ul>
+                    <li>
+                        <div class="info-para clear">
+                            <div class="info-pic-box">
+                                <a target="_blank" href="">
+                                    <img class="lazydown" src="pictures/info1.jpg">
+                                </a>
+                            </div>
+                            <div class="info-text-box">
+                                <a target="_blank" href=""><h4>无限制塑形能力会替代传统雕塑吗？</h4></a>
+                                <p class="info-remark">D打印最重要的一个能力之一就是几乎无限制的塑形能力，对于传统的雕塑来说，可以作为一种新的技术手段，进行多方面的应用。</p>
+                                <p class="info-footer">
+                                    <span>行业资讯</span>
+                                    <span><i class="icon-time"></i>1天前</span>
+                                    <span><i class="icon-hot"></i>19</span>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="info-para clear">
+                            <div class="info-pic-box">
+                                <a target="_blank" href="">
+                                    <img class="lazydown" src="pictures/info2.jpg">
+                                </a>
+                            </div>
+                            <div class="info-text-box">
+                                <a target="_blank" href=""><h4>未来第一高楼迪拜河港塔的10米微缩模型！</h4></a>
+                                <p class="info-remark">2016年10月，总投资高达10亿美元的迪拜河港塔正式破土动工。</p>
+                                <p class="info-footer">
+                                    <span>行业资讯</span>
+                                    <span><i class="icon-time"></i>2天前</span>
+                                    <span><i class="icon-hot"></i>38</span>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="info-para clear">
+                            <div class="info-pic-box">
+                                <a target="_blank" href="">
+                                    <img class="lazydown" src="pictures/info3.jpg">
+                                </a>
+                            </div>
+                            <div class="info-text-box">
+                                <a target="_blank" href=""><h4>细胞培养新方法</h4></a>
+                                <p class="info-remark">西班牙Autonomous大学和Lithoz公司近日合作利用3D打印技术开发出了一种微型陶瓷装置...</p>
+                                <p class="info-footer">
+                                    <span>行业资讯</span>
+                                    <span><i class="icon-time"></i>3天前</span>
+                                    <span><i class="icon-hot"></i>35</span>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <a href="" class="load-more">更多>></a>
+        </div>
+    </div>
+    <!--9.合作伙伴-->
+    <div class="big-box">
+        <div class="inner-box">
+            <p class="block-title">合作伙伴</p>
+            <!--合作伙伴轮播图-->
+            <div class="parter-carousel">
+                <ul class="clear img-box">
+                    <li><img src="pictures/cooperation1.jpg" alt="合作伙伴"/></li>
+                    <li><img src="pictures/cooperation2.jpg" alt="合作伙伴"/></li>
+                </ul>
+                <div class="parter-dots">
+                    <ul class="clear">
+                        <li class="hover"></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--友情链接-->
+            <div class="links-box before">
+                <div class="flinks"><span>友情链接</span></div>
+                <ul class="flinks-list clear">
+                    <li><a href="http://www.xinqigu.com" target="_blank">新奇谷</a></li>
+                    <li><a href="http://www.i3done.com" target="_blank">青少年三维创意社区</a></li>
+                    <li><a href="http://maker8.com" target="_blank">天工社</a></li>
+                    <li><a href="http://www.inside3dprinting.com.cn/zazhi.html" target="_blank">3d打印世界</a></li>
+                    <li><a href="http://bbs.3drrr.com" target="_blank">3D打印论坛</a></li>
+                    <li><a href="http://www.3ddayin.net" target="_blank">中国3D打印网</a></li>
+                    <li><a href="http://www.jgew3d.com" target="_blank">极光尔沃3D打印机</a></li>
+                    <li><a href="http://www.xxhh.com" target="_blank">嘻嘻哈哈</a></li>
+                    <li><a href="http://www.edeng.cn" target="_blank">易登网</a></li>
+                    <li><a href="http://www.atmiot.com" target="_blank">RFID打印机</a></li>
+                    <li><a href="http://bbs.rhino3d.us/forum.php" target="_blank">摩登犀牛网</a></li>
+                    <li><a href="http://3dkoukou.com" target="_blank">3d扣扣</a></li>
+                    <li><a href="http://www.dayinpai.com" target="_blank">3D打印派</a></li>
+                    <li><a href="http://www.3dhoo.com" target="_blank">3D虎</a></li>
+                    <li><a href="http://www.nanjixiong.com" target="_blank">南极熊3D打印</a></li>
+                    <li><a href="http://www.mohou.com" target="_blank">3D打印</a></li>
+                    <li><a href="http://www.cxsw3d.com" target="_blank">创想3D打印</a></li>
+                    <li><a href="http://www.dayinhu.com" target="_blank">打印虎</a></li>
+                    <li><a href="http://www.xcr3d.cn" target="_blank">三迪思维科技</a></li>
+                    <li><a href="http://www.yinmengyuan.com" target="_blank">印梦园</a></li>
+                    <li><a href="http://www.3dzyk.cn" target="_blank">3D打印资源库</a></li>
+                    <li><a href="http://www.sikantech.com" target="_blank">3D扫描仪</a></li>
+                    <li><a href="http://www.3dxy.com/" target="_blank">3D模型下载</a></li>
+                    <li><a href="http://www.yidimu.com/" target="_blank">依迪姆3d 打印机
+                    </a></li>
+                    <li><a href="http://www.dazzle-3d.com " target="_blank">北京3d打印服务
+                    </a></li>
+                    <li><a href="http://www.daye3d.com " target="_blank"> 3D打印机
+                    </a></li>
+                    <!--le-->
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--3.页脚-->
+<footer>
+    <div id="mh-content">
+        <ul class="clear">
+            <li>
+                <h3>与我们互动</h3>
+                <ul class="interactive clear">
+                    <li class="webo">
+                        <a href=""><span></span></a>
+                    </li>
+                    <li class="wechat">
+                        <a href="">
+                            <img class="wechat-hover" src="img/Qr-code.png" alt="魔猴微信公众号"/>
+                            <span></span></a>
+                    </li>
+                    <li class="phone">
+                        <a href=""><span></span></a>
+                    </li>
+                    <li class="qq">
+                        <a href=""><span></span></a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <h3>业务网络</h3>
+                <ul class="links">
+                    <li><a href="">3D打印服务</a></li>
+                    <li><a href="">3D打印机</a></li>
+                    <li><a href="">3D打印教育</a></li>
+                    <li><a href="">3D模型库</a></li>
+                </ul>
+            </li>
+            <li>
+                <h3>公司介绍</h3>
+                <ul class="links">
+                    <li><a href="tpl/about.html">关于我们</a></li>
+                    <li><a href="tpl/about.html">网站地图</a></li>
+                    <li><a href="tpl/about.html">隐私条款</a></li>
+                    <li><a href="tpl/about.html">媒体报道</a></li>
+                    <li><a href="tpl/about.html">版权声明</a></li>
+                </ul>
+            </li>
+            <li>
+                <h3>3D打印指导</h3>
+                <ul class="links">
+                    <li><a href="">材料指南</a></li>
+                    <li><a href="">3D打印知识库</a></li>
+                    <li><a href="">成功案例</a></li>
+                    <li><a href="">学生与校园</a></li>
+                </ul>
+            </li>
+            <li>
+                <h3>联系我们</h3>
+                <ul class="links">
+                    <li><a href="">联系客服</a></li>
+                    <li><a href="">企业招聘</a></li>
+                    <li><a href="">商务合作</a></li>
+                    <li><a href="">投诉和建议</a></li>
+                    <li><a href="">申请友链</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <p class="hotline">全国免费咨询热线  <span>4008-759-058</span>
+        <img src="pictures/blue_call.png" alt="热线电话"/></p>
+    <p class="copyright">© 2013-2016 魔猴网 ｜ 京ICP备13036976号-4 ｜ 京公网安备 110102003233-2</p>
+    <!--返回到页面顶部按钮-->
+    <div class="toTop">
+        <a href="javascript:;"></a>
+    </div>
+</footer>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
