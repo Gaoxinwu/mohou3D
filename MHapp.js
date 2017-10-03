@@ -15,7 +15,7 @@ var pool=mysql.createPool({
 var app=express();
 var server=http.createServer(app);
 server.listen(8081);
-//express.static若客户端请求了/public目录下的某个资源，它可以直接向客户端返回，不会再调用后续的路由。
+//express.static若客户端请求了/public目录下的某个资源，可直接向客户端返回该资源，不会再调用后续的路由。
 app.use(express.static("public"));
 //用户注册
 app.post("/reg.do",(req,res)=>{
