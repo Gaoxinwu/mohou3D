@@ -3,5 +3,7 @@
 
 ### 服务器配置：
 > database:"mohou",
+
 > port:"3306",
+
 > server.listen(8081)
